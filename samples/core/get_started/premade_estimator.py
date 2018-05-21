@@ -40,6 +40,7 @@ def main(argv):
 
     # Build 2 hidden layer DNN with 10, 10 units respectively.
     classifier = tf.estimator.DNNClassifier(
+        model_dir='/drive/app/models',
         feature_columns=my_feature_columns,
         # Two hidden layers of 10 nodes each.
         hidden_units=[10, 10],
